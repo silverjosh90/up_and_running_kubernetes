@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: react
+spec:
+  containers:
+    - image: gcr.io/kubernetes-practice-234504/create-react:2.0.1
+      name: react
+      ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP
